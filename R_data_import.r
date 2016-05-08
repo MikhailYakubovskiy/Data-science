@@ -1,5 +1,4 @@
-#ODBC connection example
-
+#ODBC CONNECTION EXAMPLE
 library(RODBC)
 
 #open connection
@@ -15,7 +14,7 @@ odbcClose(dbhandle)
 
 
 
-#importing data from text file (not tested)
+#IMPORT DATA FROM TEXT FILE
 output <- read.table(file = "link_here", sep=",", header=FALSE,
 					 col.names = c("V1", "V2", "V3", "V4", "V5"),
 					 colClasses = c("character", "numeric", "integer", "logical", "character"),
