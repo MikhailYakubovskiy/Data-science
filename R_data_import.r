@@ -11,3 +11,12 @@ res <- sqlQuery(dbhandle, sql)
 
 #close connection
 odbcClose(dbhandle)
+
+
+
+
+#importing data from text file (not tested)
+output <- read.table(file = "link_here", sep=",", header=FALSE,
+					 col.names = c("V1", "V2", "V3", "V4", "V5"),
+					 colClasses = c("character", "numeric", "integer", "logical", "character"),
+					 stringsAsFactors=FALSE)
